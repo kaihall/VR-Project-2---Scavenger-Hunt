@@ -12,7 +12,7 @@ public class ObjectiveClearer : MonoBehaviour
 	}
 	
 	public void ClearObjective() {
-		GetComponent<MeshRenderer>().enabled = false;
+		gameObject.SetActive(false);
 		objective.SetActive(false);
 		clearMusic.Play(0);
 	}

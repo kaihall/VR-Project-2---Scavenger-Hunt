@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -97,7 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 2828f67cada9a6b47b723384aa03b249,
+    type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
@@ -675,7 +676,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -328.55, y: 131.73}
+  m_AnchoredPosition: {x: -254, y: 68}
   m_SizeDelta: {x: 215.0857, y: 83.37634}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &705258873
@@ -1702,7 +1703,18 @@ MonoBehaviour:
         m_CallState: 2
   OnButtonPressedDuringHover:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1286770719}
+        m_MethodName: ClearObjective
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1286770719
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1715,8 +1727,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26fc3f065d233f7449337384d474543d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objective: {fileID: 0}
-  clearMusic: {fileID: 0}
+  objective: {fileID: 1396395641}
+  clearMusic: {fileID: 1648244183}
 --- !u!1 &1394757010 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1913245509750392, guid: c5e78a669f7936946aa19bff98e30dd5,
@@ -1757,7 +1769,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -321, y: 139}
+  m_AnchoredPosition: {x: -246.45001, y: 75.27002}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1396395643
@@ -2299,7 +2311,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -321, y: 104.5}
+  m_AnchoredPosition: {x: -246.45001, y: 40.77002}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1718097524
