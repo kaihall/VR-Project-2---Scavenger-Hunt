@@ -8,11 +8,12 @@ public class ObjectiveClearer : MonoBehaviour
 	public AudioSource clearMusic;
 	
 	void Start() {
-		clearMusic = GetComponent<AudioSource>();
+		//clearMusic = GetComponent<AudioSource>();
 	}
 	
 	public void ClearObjective() {
+		GetComponent<MeshRenderer>().enabled = false;
 		objective.SetActive(false);
-		clearMusic.Play();
+		clearMusic.Play(0);
 	}
 }
